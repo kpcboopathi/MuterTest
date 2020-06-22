@@ -1,0 +1,334 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project ExampleApp.xcodeproj -scheme ExampleApp -destination "platform=iOS Simulator,name=iPhone 8" test
+
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+note: Using new build system
+note: Building targets in parallel
+note: Planning build
+note: Using build description from disk
+CompileSwiftSources normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'ExampleAppTests' from project 'ExampleApp')
+    cd /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/(A\ Document\ Being\ Saved\ By\ muter\ 4)/ExampleApp
+    export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+    export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk
+    export TOOLCHAINS="com.apple.dt.toolchain.XcodeDefault com.apple.dt.toolchain.XcodeDefault"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -incremental -module-name ExampleAppTests -Onone -enable-batch-mode -enforce-exclusivity=checked @/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests.SwiftFileList -DDEBUG -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk -target x86_64-apple-ios12.0-simulator -g -module-cache-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Index/DataStore -swift-version 5 -I /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -c -j4 -output-file-map /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests-OutputFileMap.json -parseable-output -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests.swiftmodule -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-generated-files.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-own-target-headers.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-project-headers.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources-normal/x86_64 -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources/x86_64 -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources -Xcc -DDEBUG=1 -emit-objc-header -emit-objc-header-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests-Swift.h -working-directory /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/\(A\ Document\ Being\ Saved\ By\ muter\ 4\)/ExampleApp -Xfrontend -serialize-debugging-options
+
+CompileSwift normal x86_64 /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/(A\ Document\ Being\ Saved\ By\ muter\ 4)/ExampleApp/ExampleApp/Module2.swift (in target 'ExampleAppTests' from project 'ExampleApp')
+    cd /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/(A\ Document\ Being\ Saved\ By\ muter\ 4)/ExampleApp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift -frontend -c /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/\(A\ Document\ Being\ Saved\ By\ muter\ 4\)/ExampleApp/ExampleApp/Module.swift -primary-file /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/\(A\ Document\ Being\ Saved\ By\ muter\ 4\)/ExampleApp/ExampleApp/Module2.swift /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/\(A\ Document\ Being\ Saved\ By\ muter\ 4\)/ExampleApp/ExampleApp/AppDelegate.swift /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/\(A\ Document\ Being\ Saved\ By\ muter\ 4\)/ExampleApp/ExampleApp/ViewController.swift /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/\(A\ Document\ Being\ Saved\ By\ muter\ 4\)/ExampleApp/ExampleAppTests/ModuleTests.swift -emit-module-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module2\~partial.swiftmodule -emit-module-doc-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module2\~partial.swiftdoc -emit-module-source-info-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module2\~partial.swiftsourceinfo -serialize-diagnostics-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module2.dia -emit-dependencies-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module2.d -emit-reference-dependencies-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module2.swiftdeps -target x86_64-apple-ios12.0-simulator -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk -I /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -enable-testing -g -module-cache-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -swift-version 5 -enforce-exclusivity=checked -Onone -D DEBUG -serialize-debugging-options -serialize-debugging-options -Xcc -working-directory -Xcc /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/\(A\ Document\ Being\ Saved\ By\ muter\ 4\)/ExampleApp -enable-anonymous-context-mangled-names -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-generated-files.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-own-target-headers.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-project-headers.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources-normal/x86_64 -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources/x86_64 -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources -Xcc -DDEBUG=1 -module-name ExampleAppTests -o /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module2.o -index-store-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Index/DataStore -index-system-modules
+
+MergeSwiftModule normal x86_64 (in target 'ExampleAppTests' from project 'ExampleApp')
+    cd /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/(A\ Document\ Being\ Saved\ By\ muter\ 4)/ExampleApp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift -frontend -merge-modules -emit-module /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module\~partial.swiftmodule /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/Module2\~partial.swiftmodule /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/AppDelegate\~partial.swiftmodule /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ViewController\~partial.swiftmodule /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ModuleTests\~partial.swiftmodule -parse-as-library -sil-merge-partial-modules -disable-diagnostic-passes -disable-sil-perf-optzns -target x86_64-apple-ios12.0-simulator -enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk -I /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -I /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -enable-testing -g -module-cache-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -swift-version 5 -enforce-exclusivity=checked -Onone -D DEBUG -serialize-debugging-options -serialize-debugging-options -Xcc -working-directory -Xcc /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/\(A\ Document\ Being\ Saved\ By\ muter\ 4\)/ExampleApp -enable-anonymous-context-mangled-names -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-generated-files.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-own-target-headers.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests-project-headers.hmap -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources-normal/x86_64 -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources/x86_64 -Xcc -I/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/DerivedSources -Xcc -DDEBUG=1 -emit-module-doc-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests.swiftdoc -emit-module-source-info-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests.swiftsourceinfo -emit-objc-header-path /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests-Swift.h -module-name ExampleAppTests -o /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests.swiftmodule
+
+Ld /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/ExampleAppTests normal x86_64 (in target 'ExampleAppTests' from project 'ExampleApp')
+    cd /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/(A\ Document\ Being\ Saved\ By\ muter\ 4)/ExampleApp
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -target x86_64-apple-ios12.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk -L/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -filelist /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -rpath -Xlinker @loader_path/Frameworks -dead_strip -Xlinker -object_path_lto -Xlinker /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests_lto.o -Xlinker -export_dynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests.swiftmodule -framework XCTest -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __entitlements -Xlinker /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/ExampleAppTests.xctest-Simulated.xcent -Xlinker -dependency_info -Xlinker /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/Objects-normal/x86_64/ExampleAppTests_dependency_info.dat -o /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/ExampleAppTests
+
+CopySwiftLibs /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest (in target 'ExampleAppTests' from project 'ExampleApp')
+    cd /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/(A\ Document\ Being\ Saved\ By\ muter\ 4)/ExampleApp
+    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+    export DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer
+    export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.5.sdk
+    export TOOLCHAINS="com.apple.dt.toolchain.XcodeDefault com.apple.dt.toolchain.XcodeDefault"
+    builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/ExampleAppTests --scan-folder /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks --scan-folder /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/PlugIns --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Intermediates.noindex/ExampleApp.build/Debug-iphonesimulator/ExampleAppTests.build/SwiftStdLibToolInputDependencies.dep
+libswiftQuartzCore.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftQuartzCore.dylib
+libswiftFoundation.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftFoundation.dylib
+libswiftDarwin.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDarwin.dylib
+libswiftObjectiveC.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftObjectiveC.dylib
+libswiftDispatch.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDispatch.dylib
+libswiftCore.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCore.dylib
+libswiftUIKit.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftUIKit.dylib
+libswiftCoreImage.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreImage.dylib
+libswiftMetal.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftMetal.dylib
+libswiftCoreGraphics.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib
+libswiftos.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftos.dylib
+libswiftCoreFoundation.dylib is up to date at /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreFoundation.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftQuartzCore.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftQuartzCore.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftQuartzCore.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftQuartzCore.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftQuartzCore.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftQuartzCore.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftQuartzCore.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDarwin.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDispatch.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftFoundation.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftObjectiveC.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDarwin.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDispatch.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftFoundation.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftObjectiveC.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDispatch.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDispatch.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDarwin.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDarwin.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftFoundation.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftFoundation.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftObjectiveC.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftObjectiveC.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDarwin.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDarwin.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDarwin.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCore.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCore.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCore.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCore.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDispatch.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDispatch.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftDispatch.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftUIKit.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftUIKit.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftUIKit.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftUIKit.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftObjectiveC.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftObjectiveC.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftObjectiveC.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreImage.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreImage.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreImage.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreImage.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftUIKit.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftUIKit.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftUIKit.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftMetal.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftMetal.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftMetal.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftMetal.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreImage.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreImage.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreImage.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftMetal.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftMetal.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftMetal.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftos.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftos.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftos.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftos.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftFoundation.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftFoundation.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftFoundation.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreFoundation.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreFoundation.dylib
+Codesigning /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreFoundation.dylib
+/usr/bin/codesign --force --sign - --verbose /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreFoundation.dylib
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreGraphics.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftos.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftos.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftos.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreFoundation.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreFoundation.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCoreFoundation.dylib is unchanged; keeping original
+Probing signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCore.dylib
+/usr/bin/codesign -r- --display /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCore.dylib
+Code signature of /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest/Frameworks/libswiftCore.dylib is unchanged; keeping original
+
+CodeSign /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest (in target 'ExampleAppTests' from project 'ExampleApp')
+    cd /var/folders/f5/jcsc1cv53hd5nvtt1y0m5gc80000gn/T/TemporaryItems/(A\ Document\ Being\ Saved\ By\ muter\ 4)/ExampleApp
+    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+    
+Signing Identity:     "-"
+
+    /usr/bin/codesign --force --sign - --timestamp=none /Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Build/Products/Debug-iphonesimulator/ExampleAppTests.xctest
+
+2020-06-19 11:52:38.457 xcodebuild[13337:907476]  IDETestOperationsObserverDebug: Writing diagnostic log for test session to:
+/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Logs/Test/Test-ExampleApp-2020.06.19_11-52-33-+0530.xcresult/Staging/1_Test/Diagnostics/ExampleAppTests-5B74D57E-6F2C-425F-9BFC-69B66F38FF19/ExampleAppTests-30210DBB-81E3-4630-A352-DDF9500AAF20/Session-ExampleAppTests-2020-06-19_115238-T1AMZ9.log
+2020-06-19 11:52:38.457 xcodebuild[13337:907410] [MT] IDETestOperationsObserverDebug: (0532FFE5-DDD8-4A24-941C-43A80B05ED89) Beginning test session ExampleAppTests-0532FFE5-DDD8-4A24-941C-43A80B05ED89 at 2020-06-19 11:52:38.457 with Xcode 11E608c on target <DVTiPhoneSimulator: 0x7ffea53af410> {
+		SimDevice: iPhone 8 (5A812714-BCDE-4C2C-809B-2DA012190EE6, iOS 13.5, Shutdown)
+} (13.5 (17F61))
+2020-06-19 11:52:40.638 xcodebuild[13337:907574]  DTDeviceKit: Failed to mount DDI from '<DVTFilePath:0x7ffea561d560:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport/13.5/DeveloperDiskImage.dmg'>', error=-402652958: Error Domain=com.apple.dtdevicekit Code=806 "Failed to prepare device for development." UserInfo={AssociatedMobileDeviceFunction=AMDeviceMountImage, NSUnderlyingError=0x7ffea52e6500 {Error Domain=com.apple.dt.MobileDeviceErrorDomain Code=-402652958 "The device is locked." UserInfo={MobileDeviceErrorCode=(0xE80000E2), com.apple.dtdevicekit.stacktrace=(
+	0   DTDeviceKitBase                     0x0000000112f7281a DTDKCreateNSErrorFromAMDErrorCode + 233
+	1   DTDeviceKitBase                     0x0000000112fb18a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+	2   DTDeviceKitBase                     0x0000000112fb25e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+	3   libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	4   libdispatch.dylib                   0x00007fff70d206ec _dispatch_lane_barrier_sync_invoke_and_complete + 60
+	5   DTDeviceKitBase                     0x0000000112fb227a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+	6   IDEiOSSupportCore                   0x0000000112b66741 __37-[DVTiOSDevice(Connect) hasConnected]_block_invoke_2 + 265
+	7   DVTFoundation                       0x0000000102dbc7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+	8   DVTFoundation                       0x0000000102dc168b __DVTDispatchGroupAsync_block_invoke + 1194
+	9   libdispatch.dylib                   0x00007fff70d136c4 _dispatch_call_block_and_release + 12
+	10  libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	11  libdispatch.dylib                   0x00007fff70d16890 _dispatch_continuation_pop + 534
+	12  libdispatch.dylib                   0x00007fff70d15f16 _dispatch_async_redirect_invoke + 703
+	13  libdispatch.dylib                   0x00007fff70d22957 _dispatch_root_queue_drain + 326
+	14  libdispatch.dylib                   0x00007fff70d23097 _dispatch_worker_thread2 + 92
+	15  libsystem_pthread.dylib             0x00007fff70f729f7 _pthread_wqthread + 220
+	16  libsystem_pthread.dylib             0x00007fff70f71b77 start_wqthread + 15
+), DVTRadarComponentKey=261622, NSLocalizedDescription=The device is locked.}}, NSLocalizedRecoverySuggestion=If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device., NSLocalizedFailure=This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running., DVTRadarComponentKey=487927, NSLocalizedDescription=Failed to prepare device for development.}
+2020-06-19 11:52:40.638 xcodebuild[13337:907574]  iPhoneConnect: 📱<DVTiOSDevice (0x7ffea541b340), boopathi iPhone, iPhone, 13.5.1 (17F80), 85d4608431764a6bb09eb7d0613ce95044352158> unable to mount developer disk image, (Error Domain=com.apple.dtdevicekit Code=806 "Failed to prepare device for development." UserInfo={AssociatedMobileDeviceFunction=AMDeviceMountImage, NSUnderlyingError=0x7ffea52e6500 {Error Domain=com.apple.dt.MobileDeviceErrorDomain Code=-402652958 "The device is locked." UserInfo={MobileDeviceErrorCode=(0xE80000E2), com.apple.dtdevicekit.stacktrace=(
+	0   DTDeviceKitBase                     0x0000000112f7281a DTDKCreateNSErrorFromAMDErrorCode + 233
+	1   DTDeviceKitBase                     0x0000000112fb18a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+	2   DTDeviceKitBase                     0x0000000112fb25e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+	3   libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	4   libdispatch.dylib                   0x00007fff70d206ec _dispatch_lane_barrier_sync_invoke_and_complete + 60
+	5   DTDeviceKitBase                     0x0000000112fb227a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+	6   IDEiOSSupportCore                   0x0000000112b66741 __37-[DVTiOSDevice(Connect) hasConnected]_block_invoke_2 + 265
+	7   DVTFoundation                       0x0000000102dbc7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+	8   DVTFoundation                       0x0000000102dc168b __DVTDispatchGroupAsync_block_invoke + 1194
+	9   libdispatch.dylib                   0x00007fff70d136c4 _dispatch_call_block_and_release + 12
+	10  libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	11  libdispatch.dylib                   0x00007fff70d16890 _dispatch_continuation_pop + 534
+	12  libdispatch.dylib                   0x00007fff70d15f16 _dispatch_async_redirect_invoke + 703
+	13  libdispatch.dylib                   0x00007fff70d22957 _dispatch_root_queue_drain + 326
+	14  libdispatch.dylib                   0x00007fff70d23097 _dispatch_worker_thread2 + 92
+	15  libsystem_pthread.dylib             0x00007fff70f729f7 _pthread_wqthread + 220
+	16  libsystem_pthread.dylib             0x00007fff70f71b77 start_wqthread + 15
+), DVTRadarComponentKey=261622, NSLocalizedDescription=The device is locked.}}, NSLocalizedRecoverySuggestion=If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device., NSLocalizedFailure=This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running., DVTRadarComponentKey=487927, NSLocalizedDescription=Failed to prepare device for development.}) {
+    AssociatedMobileDeviceFunction = AMDeviceMountImage;
+    DVTRadarComponentKey = 487927;
+    NSLocalizedDescription = "Failed to prepare device for development.";
+    NSLocalizedFailure = "This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running.";
+    NSLocalizedRecoverySuggestion = "If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device.";
+    NSUnderlyingError = "Error Domain=com.apple.dt.MobileDeviceErrorDomain Code=-402652958 \"The device is locked.\" UserInfo={MobileDeviceErrorCode=(0xE80000E2), com.apple.dtdevicekit.stacktrace=(\n\t0   DTDeviceKitBase                     0x0000000112f7281a DTDKCreateNSErrorFromAMDErrorCode + 233\n\t1   DTDeviceKitBase                     0x0000000112fb18a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034\n\t2   DTDeviceKitBase                     0x0000000112fb25e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779\n\t3   libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8\n\t4   libdispatch.dylib                   0x00007fff70d206ec _dispatch_lane_barrier_sync_invoke_and_complete + 60\n\t5   DTDeviceKitBase                     0x0000000112fb227a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199\n\t6   IDEiOSSupportCore                   0x0000000112b66741 __37-[DVTiOSDevice(Connect) hasConnected]_block_invoke_2 + 265\n\t7   DVTFoundation                       0x0000000102dbc7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7\n\t8   DVTFoundation                       0x0000000102dc168b __DVTDispatchGroupAsync_block_invoke + 1194\n\t9   libdispatch.dylib                   0x00007fff70d136c4 _dispatch_call_block_and_release + 12\n\t10  libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8\n\t11  libdispatch.dylib                   0x00007fff70d16890 _dispatch_continuation_pop + 534\n\t12  libdispatch.dylib                   0x00007fff70d15f16 _dispatch_async_redirect_invoke + 703\n\t13  libdispatch.dylib                   0x00007fff70d22957 _dispatch_root_queue_drain + 326\n\t14  libdispatch.dylib                   0x00007fff70d23097 _dispatch_worker_thread2 + 92\n\t15  libsystem_pthread.dylib             0x00007fff70f729f7 _pthread_wqthread + 220\n\t16  libsystem_pthread.dylib             0x00007fff70f71b77 start_wqthread + 15\n), DVTRadarComponentKey=261622, NSLocalizedDescription=The device is locked.}";
+}
+2020-06-19 11:52:40.639 xcodebuild[13337:907410] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x7ffea541b340), boopathi iPhone, iPhone, 13.5.1 (17F80), 85d4608431764a6bb09eb7d0613ce95044352158> -- An error occurred whilst preparing device for development -- Failed to prepare device for development.
+Domain: com.apple.dtdevicekit
+Code: 806
+Recovery Suggestion: If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device.
+User Info: {
+    AssociatedMobileDeviceFunction = AMDeviceMountImage;
+    DVTRadarComponentKey = 487927;
+    NSLocalizedFailure = "This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running.";
+}
+--
+The device is locked.
+Domain: com.apple.dt.MobileDeviceErrorDomain
+Code: -402652958
+User Info: {
+    DVTRadarComponentKey = 261622;
+    MobileDeviceErrorCode = "(0xE80000E2)";
+    "com.apple.dtdevicekit.stacktrace" = (
+	0   DTDeviceKitBase                     0x0000000112f7281a DTDKCreateNSErrorFromAMDErrorCode + 233
+	1   DTDeviceKitBase                     0x0000000112fb18a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+	2   DTDeviceKitBase                     0x0000000112fb25e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+	3   libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	4   libdispatch.dylib                   0x00007fff70d206ec _dispatch_lane_barrier_sync_invoke_and_complete + 60
+	5   DTDeviceKitBase                     0x0000000112fb227a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+	6   IDEiOSSupportCore                   0x0000000112b66741 __37-[DVTiOSDevice(Connect) hasConnected]_block_invoke_2 + 265
+	7   DVTFoundation                       0x0000000102dbc7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+	8   DVTFoundation                       0x0000000102dc168b __DVTDispatchGroupAsync_block_invoke + 1194
+	9   libdispatch.dylib                   0x00007fff70d136c4 _dispatch_call_block_and_release + 12
+	10  libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	11  libdispatch.dylib                   0x00007fff70d16890 _dispatch_continuation_pop + 534
+	12  libdispatch.dylib                   0x00007fff70d15f16 _dispatch_async_redirect_invoke + 703
+	13  libdispatch.dylib                   0x00007fff70d22957 _dispatch_root_queue_drain + 326
+	14  libdispatch.dylib                   0x00007fff70d23097 _dispatch_worker_thread2 + 92
+	15  libsystem_pthread.dylib             0x00007fff70f729f7 _pthread_wqthread + 220
+	16  libsystem_pthread.dylib             0x00007fff70f71b77 start_wqthread + 15
+);
+}
+--
+2020-06-19 11:52:40.640 xcodebuild[13337:907410] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x7ffea541b340), boopathi iPhone, iPhone, 13.5.1 (17F80), 85d4608431764a6bb09eb7d0613ce95044352158> == Underlying device preparation errors ==
+2020-06-19 11:52:40.640 xcodebuild[13337:907410] [MT] iPhoneConnect: Failed _shouldMakeReadyForDevelopment check even though device is not locked by passcode.
+Domain: com.apple.platform.iphoneos
+Code: 5
+Failure Reason: allowsSecureServices: 1. isConnected: 0. Platform: <DVTPlatform:0x7ffea271b690:'com.apple.platform.iphoneos':<DVTFilePath:0x7ffea271b610:'/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform'>>. DTDKDeviceIdentifierIsIDID: 0
+User Info: {
+    DVTDeviceDescription = "\Ud83d\Udcf1<DVTiOSDevice (0x7ffea541b340), boopathi iPhone, iPhone, 13.5.1 (17F80), 85d4608431764a6bb09eb7d0613ce95044352158>";
+}
+--
+2020-06-19 11:52:40.640 xcodebuild[13337:907410] [MT] iPhoneConnect: Failed to prepare device for development.
+Domain: com.apple.dtdevicekit
+Code: 806
+Recovery Suggestion: If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device.
+User Info: {
+    AssociatedMobileDeviceFunction = AMDeviceMountImage;
+    DVTRadarComponentKey = 487927;
+    NSLocalizedFailure = "This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running.";
+}
+--
+The device is locked.
+Domain: com.apple.dt.MobileDeviceErrorDomain
+Code: -402652958
+User Info: {
+    DVTRadarComponentKey = 261622;
+    MobileDeviceErrorCode = "(0xE80000E2)";
+    "com.apple.dtdevicekit.stacktrace" = (
+	0   DTDeviceKitBase                     0x0000000112f7281a DTDKCreateNSErrorFromAMDErrorCode + 233
+	1   DTDeviceKitBase                     0x0000000112fb18a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+	2   DTDeviceKitBase                     0x0000000112fb25e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+	3   libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	4   libdispatch.dylib                   0x00007fff70d206ec _dispatch_lane_barrier_sync_invoke_and_complete + 60
+	5   DTDeviceKitBase                     0x0000000112fb227a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+	6   IDEiOSSupportCore                   0x0000000112b66741 __37-[DVTiOSDevice(Connect) hasConnected]_block_invoke_2 + 265
+	7   DVTFoundation                       0x0000000102dbc7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+	8   DVTFoundation                       0x0000000102dc168b __DVTDispatchGroupAsync_block_invoke + 1194
+	9   libdispatch.dylib                   0x00007fff70d136c4 _dispatch_call_block_and_release + 12
+	10  libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	11  libdispatch.dylib                   0x00007fff70d16890 _dispatch_continuation_pop + 534
+	12  libdispatch.dylib                   0x00007fff70d15f16 _dispatch_async_redirect_invoke + 703
+	13  libdispatch.dylib                   0x00007fff70d22957 _dispatch_root_queue_drain + 326
+	14  libdispatch.dylib                   0x00007fff70d23097 _dispatch_worker_thread2 + 92
+	15  libsystem_pthread.dylib             0x00007fff70f729f7 _pthread_wqthread + 220
+	16  libsystem_pthread.dylib             0x00007fff70f71b77 start_wqthread + 15
+);
+}
+--
+2020-06-19 11:52:40.640 xcodebuild[13337:907410] [MT] iPhoneConnect: Failed to prepare device for development.
+Domain: com.apple.dtdevicekit
+Code: 806
+Recovery Suggestion: If you are certain that Xcode supports development on this device, try disconnecting and reconnecting the device.
+User Info: {
+    AssociatedMobileDeviceFunction = AMDeviceMountImage;
+    DVTRadarComponentKey = 487927;
+    NSLocalizedFailure = "This operation can fail if the version of the OS on the device is newer than the version of Xcode that is running.";
+}
+--
+The device is locked.
+Domain: com.apple.dt.MobileDeviceErrorDomain
+Code: -402652958
+User Info: {
+    DVTRadarComponentKey = 261622;
+    MobileDeviceErrorCode = "(0xE80000E2)";
+    "com.apple.dtdevicekit.stacktrace" = (
+	0   DTDeviceKitBase                     0x0000000112f7281a DTDKCreateNSErrorFromAMDErrorCode + 233
+	1   DTDeviceKitBase                     0x0000000112fb18a9 -[DTDKMobileDeviceToken _mountDeveloperDiskImage:withError:] + 1034
+	2   DTDeviceKitBase                     0x0000000112fb25e7 __58-[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:]_block_invoke + 779
+	3   libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	4   libdispatch.dylib                   0x00007fff70d206ec _dispatch_lane_barrier_sync_invoke_and_complete + 60
+	5   DTDeviceKitBase                     0x0000000112fb227a -[DTDKMobileDeviceToken mountDeveloperDiskImageWithError:] + 199
+	6   IDEiOSSupportCore                   0x0000000112b66741 __37-[DVTiOSDevice(Connect) hasConnected]_block_invoke_2 + 265
+	7   DVTFoundation                       0x0000000102dbc7f4 __DVT_CALLING_CLIENT_BLOCK__ + 7
+	8   DVTFoundation                       0x0000000102dc168b __DVTDispatchGroupAsync_block_invoke + 1194
+	9   libdispatch.dylib                   0x00007fff70d136c4 _dispatch_call_block_and_release + 12
+	10  libdispatch.dylib                   0x00007fff70d14658 _dispatch_client_callout + 8
+	11  libdispatch.dylib                   0x00007fff70d16890 _dispatch_continuation_pop + 534
+	12  libdispatch.dylib                   0x00007fff70d15f16 _dispatch_async_redirect_invoke + 703
+	13  libdispatch.dylib                   0x00007fff70d22957 _dispatch_root_queue_drain + 326
+	14  libdispatch.dylib                   0x00007fff70d23097 _dispatch_worker_thread2 + 92
+	15  libsystem_pthread.dylib             0x00007fff70f729f7 _pthread_wqthread + 220
+	16  libsystem_pthread.dylib             0x00007fff70f71b77 start_wqthread + 15
+);
+}
+--
+2020-06-19 11:52:40.640 xcodebuild[13337:907410] [MT] iPhoneConnect: 📱<DVTiOSDevice (0x7ffea541b340), boopathi iPhone, iPhone, 13.5.1 (17F80), 85d4608431764a6bb09eb7d0613ce95044352158> == END: Underlying device preparation errors ==
+2020-06-19 11:53:00.245 xcodebuild[13337:907410] [MT] IDETestOperationsObserverDebug: (0532FFE5-DDD8-4A24-941C-43A80B05ED89) Finished requesting crash reports. Continuing with testing.
+Test Suite 'All tests' started at 2020-06-19 11:53:00.775
+Test Suite 'ExampleAppTests.xctest' started at 2020-06-19 11:53:00.783
+Test Suite 'ModuleTests' started at 2020-06-19 11:53:00.785
+Test Case '-[ExampleAppTests.ModuleTests test]' started.
+Test Case '-[ExampleAppTests.ModuleTests test]' passed (0.009 seconds).
+Test Suite 'ModuleTests' passed at 2020-06-19 11:53:00.800.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.009 (0.014) seconds
+Test Suite 'ExampleAppTests.xctest' passed at 2020-06-19 11:53:00.806.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.009 (0.023) seconds
+Test Suite 'All tests' passed at 2020-06-19 11:53:00.809.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.009 (0.034) seconds
+2020-06-19 11:53:01.086 xcodebuild[13337:907410] [MT] IDETestOperationsObserverDebug: 22.636 elapsed -- Testing started completed.
+2020-06-19 11:53:01.086 xcodebuild[13337:907410] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2020-06-19 11:53:01.086 xcodebuild[13337:907410] [MT] IDETestOperationsObserverDebug: 22.636 sec, +22.636 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/boopathi/Library/Developer/Xcode/DerivedData/ExampleApp-gijivuspaswlsgexheemrgkqpjwe/Logs/Test/Test-ExampleApp-2020.06.19_11-52-33-+0530.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started on 'iPhone 8'

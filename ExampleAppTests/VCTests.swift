@@ -36,15 +36,28 @@ class VCTests: XCTestCase {
         XCTAssertTrue(self.objVC.isResponseOK(nResponseCode: 200))
     }
     
-//    func testNotSuccess() throws {
-//        XCTAssertFalse(self.objVC.isResponseOK(nResponseCode: 201))
-//    }
+    func testNotSuccess() throws {
+        XCTAssertFalse(self.objVC.isResponseOK(nResponseCode: 201))
+    }
     
-     func testErrorCase1() throws {
+     
+    func testErrorCase1() throws {
         XCTAssertEqual("Forbidden", self.objVC.getErrorCode(ResponseCode(rawValue: 403)!))
     }
-//     func testErrorCase2() throws {
-//        XCTAssertNotEqual("Forbidden", self.objVC.getErrorCode(ResponseCode(rawValue: 200)!))
-//    }
+     
+    func testErrorCase2() throws {
+        XCTAssertNotEqual("Forbidden", self.objVC.getErrorCode(ResponseCode(rawValue: 200)!))
+    }
+    
+    
+    func testValidPassword() throws {
+        XCTAssertTrue(self.objVC.isValidPassword("12345678", "12345678"))
+    }
+    
+    func testInValidPassword() throws {
+        XCTAssertFalse(self.objVC.isValidPassword("123456789", "123456788"))
+    }
+    
+    
 
 }

@@ -114,4 +114,11 @@ func testWebService(urlString: String) {
          return strError
      }
     
+    
+    func isValidPassword(_ text: String, _ repeatedText: String) -> Bool {
+        let meetsMinimumLength = text.count >= 8
+        let passwordsMatch = repeatedText == text
+        return meetsMinimumLength && passwordsMatch
+    }
+    
 }

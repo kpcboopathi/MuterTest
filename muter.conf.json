@@ -5,7 +5,7 @@
     "-scheme",
     "ExampleApp",
     "-destination",
-    "platform=iOS Simulator,name=iPhone 8",
+    "platform=iOS Simulator,name=iPhone 11 Pro",
     "test"
   ],
   "exclude" : [

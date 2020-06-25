@@ -21,43 +21,27 @@ class VCTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
-        let urlString = "http://httpstat.us/200"
-        
-        self.objVC.testWebService(urlString: urlString)
-    }
-
-
-    func testSuccess() throws {
-        XCTAssertTrue(self.objVC.isResponseOK(nResponseCode: 200))
-    }
-    
-    func testNotSuccess() throws {
-        XCTAssertFalse(self.objVC.isResponseOK(nResponseCode: 201))
-    }
-    
-     
-    func testErrorCase1() throws {
-        XCTAssertEqual("Forbidden", self.objVC.getErrorCode(ResponseCode(rawValue: 403)!))
-    }
-     
-    func testErrorCase2() throws {
-        XCTAssertNotEqual("Forbidden", self.objVC.getErrorCode(ResponseCode(rawValue: 200)!))
-    }
     
     
     func testValidPassword() throws {
-        XCTAssertTrue(self.objVC.isValidPassword("12345678", "12345678"))
+        XCTAssertTrue(self.objVC.isValidPassword("123456789Aa"))
     }
-    
-    func testInValidPassword() throws {
-        XCTAssertFalse(self.objVC.isValidPassword("123456789", "123456788"))
+
+    func testInValidPassword_LessChars() throws {
+        XCTAssertFalse(self.objVC.isValidPassword("12345Aa"))
     }
-    
+
+    func testInValidPassword_MoreChars() throws {
+        XCTAssertFalse(self.objVC.isValidPassword("123456789Aa12345"))
+    }
+
+
+    func testValidConfirmPassword() throws {
+        XCTAssertTrue(self.objVC.isValidConfirmPassword("123456789Aa", "123456789Aa"))
+    }
+    func testInValidConfirmPassword_Mismatch() throws {
+        XCTAssertFalse(self.objVC.isValidConfirmPassword("123456789Aa", "123456789Ab"))
+    }
     
 
 }
